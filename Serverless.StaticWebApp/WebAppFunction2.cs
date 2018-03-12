@@ -10,10 +10,10 @@ using System.Text;
 
 namespace Serverless.StaticWebApp
 {
-    public static class WebAppFunction
+    public static class WebAppFunction2
     {
-        [FunctionName("WebAppFunction")]
-        public static HttpResponseMessage Run([HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "WebApp")]HttpRequestMessage req, TraceWriter log)
+        [FunctionName("WebAppFunction2")]
+        public static HttpResponseMessage Run([HttpTrigger(AuthorizationLevel.Function, "get", Route = "WebApp/{page}")]HttpRequestMessage req, TraceWriter log)
         {
             try
             {

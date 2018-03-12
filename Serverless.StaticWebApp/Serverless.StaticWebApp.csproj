@@ -3,6 +3,7 @@
     <TargetFramework>net461</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
+    <None Remove="www\Contact.html" />
     <None Remove="www\index.html" />
     <None Remove="www\vendor\bootstrap\css\bootstrap.css" />
     <None Remove="www\vendor\bootstrap\css\bootstrap.min.css" />
@@ -12,6 +13,9 @@
     <None Remove="www\vendor\jquery\jquery.slim.min.js" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="www\Contact.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="www\index.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
